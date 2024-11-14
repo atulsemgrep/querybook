@@ -8,8 +8,6 @@ import flask
 from flask_login import current_user
 from flask_limiter import RateLimitExceeded
 
-from werkzeug.exceptions import Forbidden, NotFound
-
 from app.flask_app import flask_app, limiter
 from app.db import get_session
 from const.datasources import DS_PATH
